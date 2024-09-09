@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="
 https://cdn.jsdelivr.net/npm/bootstrap-modal-js@2.0.1/demoFiles/bootstrap.bundle.min.js
 "></script>
-<link href="
+  <link href="
 https://cdn.jsdelivr.net/npm/bootstrap-modal-js@2.0.1/demoFiles/bootstrap.min.css
 " rel="stylesheet">
-<link rel="stylesheet" href="all.css">
-    <title>index</title>
-    <script type="module" crossorigin src="/vite-week-5/assets/main-d678348c.js"></script>
-    <link rel="stylesheet" href="/vite-week-5/assets/main-3e263492.css">
-  </head>
-  <body>
-    <div class="d-flex">
-    <aside class="navbar navbar-expand-lg bg-body-tertiary position-fixed top-0">
+  <link rel="stylesheet" href="all.css">
+  <title>index</title>
+  <script type="module" crossorigin src="/vite-week-5/assets/main-40613b48.js"></script>
+  <link rel="stylesheet" href="/vite-week-5/assets/main-2f92ebec.css">
+</head>
+
+<body>
+  <div class="d-flex">
+    <aside class="aside navbar navbar-expand-lg bg-body-tertiary position-fixed top-0">
     <div class="container-fluid flex-column align-items-start vh-100 justify-content-between">
         <div>
       <a class="navbar-brand" href="#"><img src="/vite-week-5/assets/logo-ANSWER-5336fb45.svg" alt="logo-ANSWER"></a>
         <ul class="navbar-nav flex-column  fw-bold">
-          <!-- 7.  為何fw-bold無法套用 -->
+
 
           <li class="nav-item ">
             <a class="nav-link"  href="#"><span class="material-symbols-outlined me-3">
-                analytics
-                </span>Dashboard</a>
-                <!-- 1.符號跟設計稿不一樣 -->
+              insert_chart
+              </span>Dashboard</a>
+               
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Question</a>
+            <a class="nav-link" href="#"><span class="material-symbols-outlined me-3">
+              forum
+              </span>Question</a>
           </li>
-       <!-- 2.沒有這個符號 -->
-        <!-- 6.為何icon無法和文字對齊 -->
+ 
+
           <li class="nav-item">
             <a class="nav-link active text-success" aria-current="page" href="#"><span class="material-symbols-outlined me-3">
                 assignment
@@ -68,198 +72,223 @@ https://cdn.jsdelivr.net/npm/bootstrap-modal-js@2.0.1/demoFiles/bootstrap.min.cs
             </div>
           </div>
     </div>
-</aside><main class="content">
-  <header>
-    <!-- 3.為何我materical symbol無法靠右，已經下了d-flex justify-content-between了   -->
-        <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid ">
-        <a class="navbar-brand ms-3" href="#">Assignment</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-               All Courses
-              </button>
-              <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-       
-      </div>
-      <div class="d-flex ">
-        <span class="material-symbols-outlined">
-          search
-          </span>
-          <span class="material-symbols-outlined">
-            notifications_active
-            </span>
-        </div>
-    </nav>
-  </header>
-  
-  <nav class="navbar navbar-expand-lg d-flex  justify-content-between">
-    <div class="container-fluid">
-    
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-             All(4)
-            </button>
-            <!-- 4.作業有要求點選要出現dropdown-menu內容嗎?設計稿沒有看到有裡面展開樣子 -->
-            <ul class="dropdown-menu ">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+</aside>      <main class="content">
+        <header>
+
+          <div class="d-flex justify-content-between">
+            <ul class="nav">
+              <li class="nav-item">
+                <a class="nav-link active  ms-3 " aria-current="page" href="#">Assignment</a>
+              </li>
+
+              <li class="nav-item">
+                <div class="dropdown">
+                  <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    All Courses
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </div>
+              </li>
+
             </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <!-- 9.已經下了d-flex justify-content-between了 但是還是無法靠右 -->
-    <h7 class="text-secondary">2 comments</h7>
-  </nav>
-  <div class="ms-5 d-flex">
-  <div class="list-group w-25">
-    <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
-      <div class="d-flex justify-content-between">
-        <h5 class="mb-1 fs-8">Chapter Assignment 2</h5>
-        <small>4 hrs ago</small>
-      </div>
-      <div class="d-flex">
-      <p class="mb-1">Please check this file…</p>
-      <small>Emily Wang</small>
-    </div>
 
-    
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex  justify-content-between">
-        <h5 class="mb-1 fs-8">Chapter Assignment 1</h5>
-        <small class="text-body-secondary">12 hrs ago</small>
-      </div>
-     <div class="d-flex">
-      <p class="mb-1">My Homework</p>
-      <small>David Xu</small>
-    </div>
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex  justify-content-between">
-        <h5 class="mb-1 fs-8">Final Assignment</h5>
-        <small class="text-body-secondary">18 hrs ago</small>
-      </div>
-      <div class="d-flex">
-        <p class="mb-1">Have a problem with this…</p>
-        <small>Tony Wei</small>
-      </div>
-     
-   
-    </a>
-    <a href="#" class="list-group-item list-group-item-action">
-      <div class="d-flex  justify-content-between">
-        <h5 class="mb-1 fs-8">Final Assignment</h5>
-        <small class="text-body-secondary">19 hrs ago</small>
-      </div>
-      <div class="d-flex">
-      <p class="mb-1">Did I do it right?</p>
-      <small>Christina Lin</small>
-    </div>
-   
-    </a>
-  </div>
-<div class="ms-3 w-75">
-  <div class="card">
-    <h5 class="card-header d-flex"> <a href="#" class="list-group-item list-group-item-action">
-
-        <h5 class="mb-1 fs-8">Chapter Assignment 2 / HTML&CSS</h5>
-        <small class="text-body-secondary">Please check this file for me, thanks!</small>
-    </a>
-    <span class="material-symbols-outlined">
-      more_vert
-      </span>
- 
-    </h5>
-    <div class="card-body">
-      <h5 class="card-title">        <div class="d-flex ">
-        <div class="flex-shrink-0">
-          <img src="/vite-week-5/assets/emilywang-cc5a821b.jpeg" alt="andychen" width="48" height="48" class="rounded-circle object-fit-cover" />
-        </div>
-    
-        <div class="flex-grow-1 ms-3">
-            <h6>Emily Wang</h6>
-        <time datetime="">10:38 AM (4 hours ago)</time>
-            <p class="card-text fs-7">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <code>div </code> is bigger than the height of the <code>img</code>  ? There is a gap below the image, but it doesn’t seems to be a padding/margin. <br>What is the gap or extra space below image?</p>
-            <a href="#" class="btn btn-primary" download>HW-2-David.zip</a>
-        </div>
-        <!-- 8.迴紋針icon找步道 -->
-      </div></h5>
-      <hr>
-      <h5 class="card-title">      
-        <div class="d-flex ">
-      <div class="flex-shrink-0">
-        <img src="/vite-week-5/assets/andychen-f14fef59.jpeg" alt="andychen" width="48" height="48" class="rounded-circle object-fit-cover" />
-      </div>
-  
-      <div class="flex-grow-1 ms-3">
-        <div class="d-flex justify-content-between">
-          <h6>Andy Chen</h6>
-          <div>
-          <span class="material-symbols-outlined">
-            star
-            </span>
-            <span class="material-symbols-outlined">
-              edit
+            <div>
+              <span class="material-symbols-outlined">
+                search
               </span>
-              <!-- 5.沒有一樣的pen logo所以找類似material symbol，為何把fill關閉星星還是填滿黑色?-->
+              <span class="material-symbols-outlined">
+                notifications_active
+              </span>
             </div>
           </div>
-          <time datetime="">13:24 AM (1 hours ago)</time>
-          <p class="card-text fs-7">Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. </p><p>You can: </p>　<p>• adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the <code>middle</code> ) or 　<br>• change the <code>display</code> so it isn’t inline.</p>
+        </header>
 
-      </div>
-    </div></h5>
-    </div>
-  </div>
-  <div class="d-flex justify-content-between mt-4 mb-5">
-  <div>
-    <span class="material-symbols-outlined">
-      chevron_left
-      </span>
-    <span class="material-symbols-outlined">
-      chevron_right
-      </span>
-    </div>
-    <div class="position-relative">
-    <a href="#" class="btn btn-outline-success  text-success">Mark as read</a>
-  <p class="d-inline-flex gap-1 ">
-    <button class="btn btn-success text-white" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-      Reply
-    </button>
-    <!-- 11.為何reply不能用a要用button? -->
-  </p>
-  <div class="collapse position-absolute bottom-0 top-0 align-items-end" id="collapseExample">
-    <div class="card card-body">
-      Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
-      <!-- 10.我設絕對定位，點開回覆內容會蓋掉reply，然後我把<button> reply內容貼到這裡，一開始網頁就會消失reply按鈕，最後就是這個內容形狀不對 -->
-    </div>
-  </div>
-</div>
-</div>
-</div>
-  </div>
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid d-flex  justify-content-between">
 
-  </main>
-</div>
-    
-  </body>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <button class="btn  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    All(4)
+                  </button>
+                  
+                  <ul class="dropdown-menu ">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+   
+          <h7 class="text-secondary">2 comments</h7>
+        </nav>
+        <div class="ms-5 d-flex">
+          <div class="list-group w-25">
+            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+              <div class="d-flex justify-content-between">
+                <h5 class="mb-1 fs-8">Chapter Assignment 2</h5>
+                <small>4 hrs ago</small>
+              </div>
+              <div class="d-flex">
+                <p class="mb-1">Please check this file…</p>
+                <small>Emily Wang</small>
+              </div>
+
+
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex  justify-content-between">
+                <h5 class="mb-1 fs-8">Chapter Assignment 1</h5>
+                <small class="text-body-secondary">12 hrs ago</small>
+              </div>
+              <div class="d-flex">
+                <p class="mb-1">My Homework</p>
+                <small>David Xu</small>
+              </div>
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex  justify-content-between">
+                <h5 class="mb-1 fs-8">Final Assignment</h5>
+                <small class="text-body-secondary">18 hrs ago</small>
+              </div>
+              <div class="d-flex">
+                <p class="mb-1">Have a problem with this…</p>
+                <small>Tony Wei</small>
+              </div>
+
+
+            </a>
+            <a href="#" class="list-group-item list-group-item-action">
+              <div class="d-flex  justify-content-between">
+                <h5 class="mb-1 fs-8">Final Assignment</h5>
+                <small class="text-body-secondary">19 hrs ago</small>
+              </div>
+              <div class="d-flex">
+                <p class="mb-1">Did I do it right?</p>
+                <small>Christina Lin</small>
+              </div>
+
+            </a>
+          </div>
+          <div class="ms-3 w-75">
+            <div class="card">
+              <h5 class="card-header d-flex"> <a href="#" class="list-group-item list-group-item-action">
+
+                  <h5 class="mb-1 fs-8">Chapter Assignment 2 / HTML&CSS</h5>
+                  <small class="text-body-secondary">Please check this file for me, thanks!</small>
+                </a>
+                <span class="material-symbols-outlined">
+                  more_vert
+                </span>
+
+              </h5>
+              <div class="card-body">
+                <h5 class="card-title">
+                  <div class="d-flex ">
+                    <div class="flex-shrink-0">
+                      <img src="/vite-week-5/assets/emilywang-cc5a821b.jpeg" alt="andychen" width="48" height="48"
+                        class="rounded-circle object-fit-cover" />
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <h6>Emily Wang</h6>
+                      <time datetime="">10:38 AM (4 hours ago)</time>
+                      <p class="card-text fs-7">Hi Teacher, the attached file is my homework of chapter 2. And here
+                        comes a question: Why in the following code the height of the <code>div </code> is bigger than
+                        the height of the <code>img</code> ? There is a gap below the image, but it doesn’t seems to be
+                        a padding/margin. <br>What is the gap or extra space below image?</p>
+                      <a href="#" class="btn btn-primary" download><span class="material-symbols-outlined">
+                        attach_file
+                        </span>HW-2-David.zip</a>
+                    </div>
+                    <!-- 8.迴紋針icon找步道 -->
+                  </div>
+                </h5>
+                <hr>
+                <h5 class="card-title">
+                  <div class="d-flex ">
+                    <div class="flex-shrink-0">
+                      <img src="/vite-week-5/assets/andychen-f14fef59.jpeg" alt="andychen" width="48" height="48"
+                        class="rounded-circle object-fit-cover" />
+                    </div>
+
+                    <div class="flex-grow-1 ms-3">
+                      <div class="d-flex justify-content-between">
+                        <h6>Andy Chen</h6>
+                        <div>
+                          <span class="material-symbols-outlined">
+                            star
+                          </span>
+                          <span class="material-symbols-outlined">
+                            edit
+                          </span>
+                          <!-- 5.沒有一樣的pen logo所以找類似material symbol，為何把fill關閉星星還是填滿黑色?-->
+                        </div>
+                      </div>
+                      <time datetime="">13:24 AM (1 hours ago)</time>
+                      <p class="card-text fs-7">Hi David, by default, an image is rendered inline, like a letter so it
+                        sits on the same line that a, b, c and d sit on. There is space below that line for the
+                        descenders you find on letters like g, j, p and q. </p>
+                      <p>You can: </p>　<p>• adjust the <code>vertical-align</code> of the image to position it elsewhere
+                        (e.g. the <code>middle</code> ) or 　<br>• change the <code>display</code> so it isn’t inline.
+                      </p>
+
+                    </div>
+                  </div>
+                </h5>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between mt-4 mb-5">
+              <div>
+                <span class="material-symbols-outlined">
+                  chevron_left
+                </span>
+                <span class="material-symbols-outlined">
+                  chevron_right
+                </span>
+              </div>
+              <div class="position-relative">
+                <a href="#" class="btn btn-outline-success  text-success">Mark as read</a>
+                <div class="d-inline-flex gap-1 ">
+                  <button class="btn btn-success text-white" data-bs-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Reply
+                  </button>
+
+                   
+                </div>
+                <div class="collapse position-absolute bottom-0 end-0 align-items-end" id="collapseExample">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed
+                    when the user activates the relevant trigger.
+                    <button class="btn btn-success text-white" data-bs-toggle="collapse" href="#collapseExample"
+                    role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Reply
+                  </button>
+                  </div>
+                </div>
+
+     
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </main>
+  </div>
+  
+</body>
+
 </html>
